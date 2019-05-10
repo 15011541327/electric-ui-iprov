@@ -1,0 +1,86 @@
+
+/* 改变主题色变量*/
+/*墨绿色 #007873*/
+$--color-primary: #00827B;
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: '~element-ui/lib/theme-chalk/fonts';
+
+@import "~element-ui/packages/theme-chalk/src/index";
+$color-primary: #009C84;//#  05504C
+$color-text-primary: #007873;
+$color-grayF2:#f2f2f2;
+$color-white:#fff;
+$color-black3:#333;
+$color-process:#008be8;
+.app-scss{
+.navTabList .el-tabs__nav{
+  .is-active{
+    color: $color-primary;
+    a{
+      color: $color-primary;
+    }
+  }
+}
+.tools-bottom{
+  background: $color-grayF2;
+}
+.el-table{
+  color: $color-black3;
+}
+.topmenu{
+  background: $color-primary;
+}
+.el-message-box__title,
+.el-dialog__title{
+  color: $color-text-primary;
+}
+.el-step__head.is-process{
+  color: $color-process;
+  border-color: $color-process;
+}
+.navTabList .nt-ul .is-active{
+  color:$--color-primary;
+}
+.el-input__inner{
+  &:focus{
+    border-color: $--color-primary;
+  }
+}
+//开关
+.el-switch{
+   &.is-checked .el-switch__core{
+     background-color: $--color-primary;
+   }
+}
+
+// 复选框
+.el-checkbox__input{
+  .el-checkbox__inner{
+    &::after{
+      border-color: $color-text-primary;
+    }
+  }
+  &.is-checked .el-checkbox__inner {
+    background-color: $color-white;
+  }
+}
+// 单选框
+.el-radio{
+  &.is-checked:not(.is-disabled){
+    .el-radio__inner{
+      background: $color-white;
+      &::after{
+        width: 5px;
+        height: 5px;
+        background-color:$color-text-primary;
+      }
+    }
+  }
+}
+.toolbar-group{
+  .el-dropdown{
+    color: $color-text-primary;
+  }
+}
+
+}
